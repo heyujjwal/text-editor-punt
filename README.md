@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# Simple Text Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a simple text editor built with React and TypeScript. It allows users to select different Google fonts, adjust font weight, toggle italic styling, change font size, and switch between dark mode and light mode. The application also features a find and replace functionality, and automatically saves settings and text to the browser's local storage.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Font family selection with all Google fonts
+- Font weight selection based on selected font
+- Italic toggle if the selected font and weight combination supports italic
+- Font size adjustment
+- Dark mode and light mode toggle
+- Find and replace functionality with highlighted results
+- Auto-save to local storage
+- Responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Ensure you have the following installed on your local development machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or later)
+- npm (v6 or later) or yarn (v1.22 or later)
+- Git
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   git clone https://github.com/heyujjwal/text-editor-punt.git
+   cd text-editor-punt
+   ```
+2. Install the dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+4.Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Or Open the Direct deployed project through this link: https://text-editor-xi-opal.vercel.app/
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Font Selection
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Use the **Font Family** dropdown to select from a list of Google fonts.
+- The **Font Weight** dropdown will populate with available weights based on the selected font.
+- Use the **Italic** toggle to apply italic styling if the selected font and weight support it.
+- Adjust the **Font Size** using the dropdown menu.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Dark Mode
 
-## Learn More
+- Use the **Dark Mode** toggle to switch between dark mode and light mode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Find and Replace
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Enter the text you want to find in the **Find** input field.
+- Enter the replacement text in the **Replace** input field.
+- Click **Find** to highlight the occurrences of the find term in the text editor.
+- Click **Replace** to replace the occurrences of the find term with the replace term.
+
+### Auto Save
+
+- The application automatically saves the text and selected settings to local storage.
+- On page reload, the application restores the saved text and settings.
+
+
+
+## Contributing
+If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are welcome.
+
+## License
+This project is licensed under the MIT License. 
+
+
+This `README.md` file provides a comprehensive guide on how to install, run, and use your project, as well as how to deploy it on Vercel. Adjust any specific details as needed based on your project repository's actual URL and other configurations.
+
+
+
